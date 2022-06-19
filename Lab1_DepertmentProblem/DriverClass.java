@@ -45,7 +45,8 @@ public class DriverClass {
 			char[] password3 = cs.generatePassword();
 			cs.showCredentials(obj, emailAdd3, password3);
 			break;
-
+		default: 
+			System.out.println("Wrong option!! Please run again");
 		}
 
 	}
