@@ -22,26 +22,26 @@ public class DriverClass {
 		switch (option) {
 
 		case 1:
-			String emailAdd = cs.generateEmailAddress(obj.getFirstName(),
-					obj.getLastName(), "Technical");
+			String emailAdd = cs.generateEmailAddress(obj.getFirstName().toLowerCase(),
+					obj.getLastName().toLowerCase(), "Technical");
 			char[] password = cs.generatePassword();
 			cs.showCredentials(obj, emailAdd, password);
 			break;
 		case 2:
-			String emailAdd1 = cs.generateEmailAddress(obj.getFirstName(),
-					obj.getLastName(), "Admin");
+			String emailAdd1 = cs.generateEmailAddress(obj.getFirstName().toLowerCase(),
+					obj.getLastName().toLowerCase(), "Admin");
 			char[] password1 = cs.generatePassword();
 			cs.showCredentials(obj, emailAdd1, password1);
 			break;
 		case 3:
-			String emailAdd2 = cs.generateEmailAddress(obj.getFirstName(),
-					obj.getLastName(), "Human Resource");
+			String emailAdd2 = cs.generateEmailAddress(obj.getFirstName().toLowerCase(),
+					obj.getLastName().toLowerCase(), "Human Resource");
 			char[] password2 = cs.generatePassword();
 			cs.showCredentials(obj, emailAdd2, password2);
 			break;
 		case 4:
-			String emailAdd3 = cs.generateEmailAddress(obj.getFirstName(),
-					obj.getLastName(), "Legal");
+			String emailAdd3 = cs.generateEmailAddress(obj.getFirstName().toLowerCase(),
+					obj.getLastName().toLowerCase(), "Legal");
 			char[] password3 = cs.generatePassword();
 			cs.showCredentials(obj, emailAdd3, password3);
 			break;
